@@ -1,11 +1,11 @@
-# Tutorial on how to import a Blender model (or any 3D model) into Town (or any F3X game)
-## Introduction:
+# Tutorial on how to import a Blender model into Town (or any F3X game)
+## Introduction
 This repository is **not** designed to be able to be ran and used straight out the box, this is due to a skill issue on my part not having a Windows PC, thus unable to get macros working on Windows. However from feedback of a few other people who attempted the macro, `pywin32` (https://pypi.org/project/pywin32/) should works the best out of a few mouse/keyboard libraries. 
 
-## Demonstration:
+## Demonstration
 https://www.youtube.com/watch?v=l-BSNzQUWrY
 
-## Main Principle Of Exporting:
+## Main Principle Of Exporting
 The main principle of how this works is using the fact that any scalene triangle is able to be disected into 2 right-angle triangles (or wedges as called in Roblox), here's a commented function on how the maths would work if you can't be bothered to maths it yourself, a copy of this is also in this directory named `TrianglesToWedges.py`:
 ```py
 from numpy import array as arr, float64 as f64, dot, cross, linalg as linear
@@ -87,6 +87,8 @@ After saving the code to your project folder, find the absolute path of this fil
 ```py
 exec(compile(open("ur/file/path").read(),"the/same/file/path",'exec'))
 ```
+## Macro
+The way the macro works is very simple, following the order of `INSERT` -> `ROTATE` -> `MOVE` -> `RESIZE`, recommended to always leave `RESIZE` to the last step to avoid large parts getting stuck due to hitting plot boundaries. If any issue occurs with entering the values (coordinates, rotations and dimensions), it is likely a speed issue, try turning down your speed to see if the issue is still there, if it is, it shouldnt be.
 
 ## Extras
 I have also uploaded a Blender file with the name `BoundingBox.blend.Zip` in the current directory, not very important but it contains the exact bounding box size of Town's 100x200 plot, with the base marked with a cross, relatively convenient to use for estimating sizes. Using multiple instances of Roblox to divide a high triangle count model up is also highly recommended as it can increase speed significantly.
