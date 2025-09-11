@@ -28,10 +28,10 @@ def GenWedges(a,b,c):
     s1,c1 = (0.001, h, abs(dot(ab, vb))),(a + b) / 2
     s2,c2 = (0.001, h, abs(dot(ac, vb))),(a + c) / 2
     CalcRotation = lambda vr, vu, vb: (
-        todeg(at(vb[1], sqrt(vb[0]**2 + vb[2]**2))),
-        todeg(at(-vb[0], vb[2])),
+        -todeg(at(vb[1], sqrt(vb[0]**2 + vb[2]**2))),
+        -todeg(at(-vb[0], vb[2])),
         todeg(at(vr[1], vu[1]))
     )
     r1 = CalcRotation(vr, vu, vb)
     r2 = CalcRotation(-vr, vu, -vb)
-    return (c1, s1, r1), (c2, s1, r2)
+    return (c1, s1, r1), (c2, s2, r2)
