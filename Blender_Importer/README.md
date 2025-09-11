@@ -41,11 +41,11 @@ def GenWedges(a,b,c): #a,b,c being vertices of a triangle
         ry = todeg(at(-vb[0], vb[2]))
         rx = todeg(at(vb[1], sqrt(vb[0]**2 + vb[2]**2)))
         rz = todeg(at(vr[1], vu[1]))
-        return (rx, ry, rz)
+        return (-rx, -ry, rz)
     
     r1 = CalcRotation(vr, vu, vb)
     r2 = CalcRotation(-vr, vu, -vb)
-    return (c1, s1, r1), (c2, s1, r2) #These data would work directly when inputted to F3X tools, rotation may need tweaking, size and position should be perfect
+    return (c1, s1, r1), (c2, s2, r2) #These data would work directly when inputted to F3X tools, rotation may need tweaking, size and position should be perfect
 ```
 To use this, just import the function to your main macro module, iterate through a list of triangles, recommended to be exported to a csv/txt file first for easier management, although a direct input from Blender is also possible. After iteration, you would have a new list of wedges double the amount of your original triangle count. 
 
