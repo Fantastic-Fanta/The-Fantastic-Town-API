@@ -1,5 +1,5 @@
 # Gapfiller tool for Town
-The maths here and method are the exact same as the Blender Importer, refer to that directory if you are interested. This will only explain how the tool can be accessed and used.
+The maths here and method are the exact same as the Blender Importer ([triangle to wedge maths](https://github.com/Fantastic-Fanta/The-Fantastic-Town-API/blob/main/Blender_Importer/TriangleToWedges.py)), refer to that directory if you are interested. This will only explain how the tool can be accessed and used.
 
 **Step 1:**
 Find a gap that you want to fill, move 3 spheres (or any part) to define the corners of a triangle.
