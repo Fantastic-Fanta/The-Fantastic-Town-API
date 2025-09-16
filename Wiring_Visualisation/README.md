@@ -15,8 +15,7 @@ Paste the code from [here](https://github.com/Fantastic-Fanta/The-Fantastic-Town
 <img width="794" height="624" alt="Screenshot 2025-09-16 at 7 20 30 PM" src="https://github.com/user-attachments/assets/166cc943-a216-42f7-98c2-19e8d691f023" />
 
 **Step 4:**
-This should generate a 4 character code, in my case it would be `FUQJ`, enter this into the local variable called `ImportCode` inside the configs
-<img width="422" height="50" alt="Screenshot 2025-09-16 at 7 22 19 PM" src="https://github.com/user-attachments/assets/ea14a1c4-b26d-4b36-a99e-9c434861d547" />
+This should generate a 4 character code, in my case it would be `FUQJ`, enter this into the local variable called `ImportCode` inside the configs, by default it is `ABCD`.
 
 **Step 5:**
 Click `F8` or `Run` inside the testing tab in Studio, make sure to locate your model through selecting and clicking F.
