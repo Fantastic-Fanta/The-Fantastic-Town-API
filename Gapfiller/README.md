@@ -18,3 +18,7 @@ All the data fields are copyable by clicking on them, insert 2 new wedges, then 
 **Step 5:**
 Now you get 2 wedges which should fill your gap perfectly
 <img width="741" height="729" alt="Screenshot 2025-09-13 at 9 41 34 PM" src="https://github.com/user-attachments/assets/c8877c7c-9bec-4911-83ca-5757970ac641" />
+
+**Alternative To Webpage**
+The Discord application is also available in the same way the webpage works, auth link: https://discord.com/oauth2/authorize?client_id=1420272625552195604
+<img width="872" height="737" alt="Screenshot 2025-10-01 at 7 08 33 AM" src="https://github.com/user-attachments/assets/91add230-a288-41d2-b501-4c3c65810fa1" />
